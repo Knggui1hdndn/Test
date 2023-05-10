@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Settings">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtNumber1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boder_and_stroke"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/imgDropDown"
+            android:layout_toRightOf="@id/txtNumber1"
+            android:text="Hiển thị trên ứng dụng khác"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/baseline_arrow_drop_down_24" />
+
+        <RelativeLayout
+            android:id="@+id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNumber1"
+            android:layout_alignStart="@id/txt1"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="4dp"
+            android:background="#EDEBEB"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cửa sổ nổi" />
+
+            <Switch
+                android:id="@+id/swt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtNumber2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boder_and_stroke"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/imgDropDown2"
+            android:layout_toRightOf="@id/txtNumber2"
+            android:text="Bỏ qua tối ưu hóa pin"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgDropDown2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/baseline_arrow_drop_down_24" />
+
+        <RelativeLayout
+            android:id="@+id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNumber2"
+            android:layout_alignStart="@id/txt2"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="4dp"
+            android:background="#EDEBEB"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bỏ qua tối ưu hóa pin" />
+
+            <Switch
+                android:id="@+id/swt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginRight="3dp"
+        android:text="More help"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEBEB"
+            android:padding="15dp"
+
+            >
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="15dp"
+                android:text="Hiển thị màn hình khóa "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:text="Set Now" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginRight="3dp"
+
+                android:text="Nếu hình ảnh động không hiện lên màn hình khóa bạn có thể cài đặt &quot;hiển thị màn hình khóa&quot;"
+
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

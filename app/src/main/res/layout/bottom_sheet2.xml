@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+
+    android:padding ="15dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber1"
+        android:layout_alignStart="@id/txt1"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="4dp"
+        android:background="#EDEBEB"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lặp laị" />
+
+        <Switch
+            android:id="@+id/swt1"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber1"
+        android:layout_alignStart="@id/txt1"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="4dp"
+        android:background="#EDEBEB"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phần trăm" />
+
+        <Switch
+            android:id="@+id/swt2"
+            android:checked="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber1"
+        android:layout_alignStart="@id/txt1"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="4dp"
+        android:background="#EDEBEB"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày" />
+
+        <Switch
+            android:id="@+id/swt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+
+            android:layout_alignParentEnd="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/btnOK"
+    android:textAllCaps="false"
+    android:text="Hoàn thành"
+    />
+</LinearLayout>
